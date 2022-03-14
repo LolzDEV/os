@@ -1,7 +1,7 @@
 .section .text
-.global _entry
-_entry: # Placed at 0x80000000 by the linker
-    la sp, etext # Let the stack start where the text section ends
+.global entry
+entry: # Placed at 0x80000000 by the linker
+    la sp, _stack_start # Let the stack start where the bss ends
     li a0, 1024*4
     csrr a1, mhartid
     addi a1, a1, 1

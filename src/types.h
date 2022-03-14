@@ -9,3 +9,5 @@ typedef long i64;
 typedef int i32;
 typedef short i16;
 typedef char i8;
+
+typedef u64 size_t;
